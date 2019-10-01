@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import RegistrationPage from './components/RegistrationPage';
 
 function App() {
   return (
     <div className="App">
-      
+    <RegistrationPage/> 
     </div>
   );
 }
