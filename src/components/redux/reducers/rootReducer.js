@@ -16,9 +16,9 @@ function userGettingToken(state=initialseState,action) {
         case REGISTER_USER:
           return {...state, message:action.successRegister,color:action.color}
         case TOKEN:
-              return {...state,token:action.token}
+              return {...state,token:action.token.data.token,  showAlert:!action.showAlert, message:action.successMessage,color:action.color}
         case LOGIN_USER:
-          return {...state, isLoging:!action.isLoging, message:action.successMessage,color:action.color}
+          return {...state, isLoging:!action.isLoging}
         case INVALID_USER_EXISTING_USER:
           return {...state, message:action.errorMessage,color:action.color,showAlert:!action.showAlert}  
         default:
